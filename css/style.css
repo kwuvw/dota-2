@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2? family= Revalia & family= Roboto:wght@100;300;400;500;700;900 & family= Stylish & display=swap' );
+.container{
+    max-width: 1115px;
+    margin: 0 auto;
+}
+.frc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fcc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section{
+    padding: 70px 40px;
+}
+.header{
+    background: #FFAEAE;
+    padding: 0 50px;
+}
+.container_header{
+    display: flex;
+}
+
+.header__nav{
+    margin: auto 0 ;
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+}
+.nav__item{
+    margin-right: 42px;
+
+}
+.nav__link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: red;
+    text-decoration: none;
+    
+}
+
+.header__logo{
+    margin-right: auto;
+    width: 75px;
+    height: 75px;
+    margin-top: 34px;
+    margin-bottom: 25px;
+}
+ 
+/* hero*/
+
+.hero-block{
+    background-color: #FFAEAE;
+}
+.container_hero-block{
+    display: flex;
+    justify-content: center;
+}
+.hero-block__img{
+    margin: auto 116px auto 0;
+}
+.hero-block__contemt{
+    max-width:45% ;
+}
+.hero-block__title{
+    color: #000;
+    font-size: 48px;
+    font-family: 'Stylish', sans-serif;
+    line-height: 164.063%;
+    margin-bottom: 31px;
+    margin-left: 25px;
+}
+.hero-block__btn{
+    width: 225px;
+    height: 66.3px;
+    background: #A13434;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: 164.063%;
+    letter-spacing: 1.6px;
+    border: none;
+    cursor: pointer;
+
+}
+/*about*/
+.about{
+    background-color: #E37E7E;
+}
+.container_about{
+    
+}
+.about__title{
+    text-align: center;
+    font-size: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 auto 16px auto;
+}
+.about__text{
+    
+    color: #727272;
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.about__content{
+    margin-top: 4%;
+    gap: 10%;
+}
+
+.about__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__img-block{
+    width: 40%;
+}
+/* skills */ 
+.skills{
+    width: 40%;
+}
+.skills__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.skills__full{
+    width: 100%;
+    height: 4px;
+    background-color: #C4C4C4;
+}
+.skills__done1{
+    width: 80%;
+    height: 4px;
+    background-color: #D73030;
+}
+.skills__done2{
+    width: 75%;
+    height: 4px;
+    background-color: #D73030;
+}
+.skills__done3{
+    width: 90%;
+    height: 4px;
+    background-color: #D73030;
+}
+
+/* доп. картинки */
+.about__icon{
+    position: absolute;
+    width: 25%;
+    height: 35%;
+}
+
+.tango{
+    top: -15%;
+    left: -13% ;
+}
+.clarity{
+    top: 80% ;
+    left: 90% ;
+}
+.rapire{
+    top: -15%;
+    left: 90% ;
+    transform: rotate(-45deg);
+}
+.about__img-block{
+    position: relative;
+}
+ .video{
+    background-color: #FFAEAE;
+ }
+.text-center{
+    text-align: center;
+}
+iframe{
+    height: 300px;
+    width: 100%;
+    max-width: 600px;
+}
+.gallery__content > img{
+    transition: all 1s;
+    width: 30%;
+}
+.gallery__content > img:hover{
+    transform: scale(1.1);
+}
+.gallery__content{
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.gallery{
+    background-color: #E37E7E;
+}
+footer{
+    background-color: #ff0000;
+    color: #000;
+    padding: 0 10px 0 30px;
+}
+.footer__container{
+    width: 100%;
+    justify-content: space-between;
+}
+.footer__h3{
+    margin: 0;
+}
+
+.btn__burger_line{
+    background-color: #FFF;
+    height: 3px;
+    width: 100%;
+}
+
+.btn__burger_menu{
+    display: none;
+}
+ul{
+    padding: 0;
+}
+
+@media (max-width: 460px){
+    .about__content{
+        flex-direction: column;
+    }
+    
+    .container_hero-block{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .btn__burger_menu{
+        justify-content: space-between;
+        height: 30px;
+        background-color: transparent;
+        border: 0;
+        width: 55px;
+        margin: auto 0;
+        display: flex;
+
+    }
+
+    .about__img-block{
+        width: 90%;
+        margin: 40px auto 0 auto;
+    }
+    .skills{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero-block__img{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .hero-block__title{
+        text-align:center;
+        border: 0;
+    }
+
+    .hero-block__btn{
+        margin: 0 auto;
+        display: block;
+    }
+    
+
+
+}
