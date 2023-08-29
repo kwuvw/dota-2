@@ -18,22 +18,25 @@ section{
 }
 .header{
     background: #FFAEAE;
-    padding: 0 50px;
+    padding: 20px 50px;
+    position: relative;
 }
 .container_header{
     display: flex;
+    justify-content: space-between;
 }
 
 .header__nav{
     margin: auto 0 ;
+    transition: height 1.7s ease;
+}
+.header__nav-active{
+    height: 330px !important;
 }
 .nav__list{
     display: flex;
     list-style: none;
-}
-.nav__item{
-    margin-right: 42px;
-
+    gap:42px;
 }
 .nav__link{
     font-family: 'Roboto';
@@ -48,13 +51,11 @@ section{
 }
 
 .header__logo{
-    margin-right: auto;
     width: 75px;
     height: 75px;
-    margin-top: 34px;
-    margin-bottom: 25px;
+    
 }
- 
+
 /* hero*/
 
 .hero-block{
@@ -209,8 +210,27 @@ iframe{
     flex-wrap: wrap;
     gap: 10px;
 }
+.image_full_screen{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #00000044;
+    z-index: 5;
+    pointer-events: none;
+}
 .gallery{
     background-color: #E37E7E;
+
+    
+}
+
+.image_full_screen > img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    margin: auto 0;
+    pointer-events: all;
 }
 footer{
     background-color: #ff0000;
@@ -238,7 +258,7 @@ ul{
     padding: 0;
 }
 
-@media (max-width: 460px){
+@media (max-width: 930px){
     .about__content{
         flex-direction: column;
     }
@@ -250,7 +270,15 @@ ul{
     }
 
     .header__nav{
-        display: none;
+        overflow-y: hidden ;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #FFAEAE;
+        width: 100%;
+        box-shadow: 0 10px 15px -10px black;
+        border-radius: 20px;
+        height: 0;
     }
 
     .btn__burger_menu{
@@ -263,9 +291,11 @@ ul{
         display: flex;
 
     }
-
+    .container_header{
+        width: 100%;
+    }
     .about__img-block{
-        width: 90%;
+        width: 80%;
         margin: 40px auto 0 auto;
     }
     .skills{
@@ -288,6 +318,19 @@ ul{
         display: block;
     }
     
+    .nav__list{
+        flex-direction:column;
+        
+        
+    }
+    
+    .nav__link{
+        
+    }
 
+    .nav__item{
+        display: flex;
+        justify-content: center;
+    }
 
 }
